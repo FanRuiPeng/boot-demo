@@ -3,5 +3,10 @@ spring:
     active: dev
   main:
     banner-mode: 'console'
+  mvc:
+    static-path-pattern: /static/**
 server:
   port: 8089
+security:
+  user:
+    password: 123456
