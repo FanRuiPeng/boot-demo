@@ -29,8 +29,11 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-aop')
     compile('org.springframework.boot:spring-boot-starter-cache')
-    compile('org.springframework.boot:spring-boot-starter-security')
+//    compile('org.springframework.boot:spring-boot-starter-security')
     compile('org.springframework.boot:spring-boot-starter-validation')
+    compile('org.springframework.boot:spring-boot-starter-data-redis')
+// https://mvnrepository.com/artifact/redis.clients/jedis
+    compile group: 'redis.clients', name: 'jedis', version: '2.9.0'
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.retry:spring-retry')
     compile('org.springframework.session:spring-session-core')
@@ -38,5 +41,5 @@ dependencies {
     compileOnly('org.springframework.boot:spring-boot-configuration-processor')
     compileOnly('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
-    testCompile('org.springframework.security:spring-security-test')
+//    testCompile('org.springframework.security:spring-security-test')
 }

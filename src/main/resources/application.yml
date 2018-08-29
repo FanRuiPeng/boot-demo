@@ -7,6 +7,6 @@ spring:
     static-path-pattern: /static/**
 server:
   port: 8089
-security:
-  user:
-    password: 123456
+#security:
+#  user:
+#    password: 123456
